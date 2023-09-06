@@ -35,7 +35,7 @@ multiple times
 
 4\. Add an undo button somewhere on the screen which will undo the last user action
 
-5\. Add another button "Add row", which will add another row with 3 cells (e.g. 1000, 1100, 1200...) everytime it is pressed. The drag, drop and undo
+5\. Add another button "Add row", which will add another row with 3 cells (e.g. 1000, 1100, 1200...) everytime it is pressed. 
 
-functionality should work for cells in the new rows also.
+The drag, drop and undo functionality should work for cells in the new rows also.
 
