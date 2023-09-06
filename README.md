@@ -1,4 +1,3 @@
-﻿<a name="br1"></a> 
 **Goal**: Create drag & drop functionality to move Div elements from one cell to another in a table
 
 **Technology**: HTML, JavaScript, CSS
