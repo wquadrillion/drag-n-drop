@@ -1,0 +1,51 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+td {
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+    position: relative; /* Required for centering */
+}
+
+.box {
+    width: 120px;
+    height: 40px;
+    background-color: #3498db; /* Default background color */
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded edges */
+    display: flex; /* Center the content vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Required for centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Move to center position */
+    transition: transform 0.3s ease; /* Add transition property */
+}
+
+.dragging {
+    opacity: 0.7;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
