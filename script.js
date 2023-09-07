@@ -45,8 +45,11 @@ const undoStack = [];
 // Function to handle drag start
 function handleDragStart(event) {
     sourceBox = event.target;
+
     event.dataTransfer.setData("text/plain", event.target.id);
-    event.target.classList.add("dragging");
+    event.dataTransfer.effectAllowed = "move";
+
+    sourceBox.classList.add("dragging");
 }
 
 // Function to handle drag over
@@ -86,6 +89,10 @@ function handleDrop(event) {
         });
 
     }
+
+    // Reset the transform property for smooth movement animation
+    sourceBox.style.transition = "transform 0.3s ease";
+    sourceBox.style.transform = "translate(-50%, -50%)"; // Reset transform
 
     sourceBox.classList.remove("dragging");
 }

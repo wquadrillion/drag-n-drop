@@ -28,11 +28,13 @@ td {
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Move to center position */
-    transition: transform 0.3s ease; /* Add transition property */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition properties */
 }
 
-.dragging {
-    opacity: 0.7;
+/* Style for the dragging effect */
+.box.dragging {
+    opacity: 0.7; /* Reduce opacity when dragging */
+    transform: translate(-50%, -50%) scale(1.05); /* Scale up slightly when dragging */
 }
 
 button {
